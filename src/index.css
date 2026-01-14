@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body.light {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #1d4ed8;
+}
+
+body.dark {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --primary-color: #3b82f6;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#outline {
+      stroke: #4285F4;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
+      fill: none;
+    }
+    
+    .animated {
+      stroke-dasharray: 2.427766571px, 242.7766571045px;
+      stroke-dashoffset: 0;
+      animation: anim 2s linear infinite;
+    }
+    
+    #outline-bg {
+      opacity: 0.05;
+      fill: none;
+      stroke: #4285F4;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
+    }
+    
+    @keyframes anim {
+      12.5% {
+        stroke-dasharray: 33.9887319946px, 242.7766571045px;
+        stroke-dashoffset: -26.7054322815px;
+      }
+      43.75% {
+        stroke-dasharray: 84.9718299866px, 242.7766571045px;
+        stroke-dashoffset: -84.9718299866px;
+        stroke: #4285F4;
+      }
+      to {
+        stroke-dasharray: 2.427766571px, 242.7766571045px;
+        stroke-dashoffset: -240.3488905334px;
+      }
+    }
+    .polygon2{
+        /* translate: -88px 0px; */
+        color:#4285F4;
+        width: 100px;
+
+    }
+    /* .svvvgh{
+        translate: 660px 0px;
+    } */
+    .arrow2 {
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      background-color: white;
+     
+    }
+
+    .right2 {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      /* translate: -88px 0px; */
+    }
+    .left2 {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      /* translate: -130px 0px; */
+    	}
+
+.custom-light-shadow {
+  box-shadow: 25px 10px 12px 0px #2563eb55, 20px 20px 36px 20px #2563eb33;
+  background-color: transparent;
+  background: transparent;
+  
+}
